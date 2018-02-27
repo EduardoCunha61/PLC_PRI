@@ -1,0 +1,70 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Álbum Fotográfico
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+		link(href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700', rel='stylesheet')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css')
+		link(rel='stylesheet', href='../stylesheets/gallery-clean.css')
+
+	body
+	.container.gallery-container
+		h1 Bootstrap 3 Gallery
+		p.page-description.text-center Clean Layout With Minimal Styles
+		.tz-gallery
+			.row
+				.col-sm-6.col-md-4
+					.thumbnail
+						a.lightbox(href='../images/park.jpg')
+							img(src='../images/park.jpg', alt='Park')
+						.caption
+							h3 Thumbnail label
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				.col-sm-6.col-md-4
+					.thumbnail
+						a.lightbox(href='../images/bridge.jpg')
+							img(src='../images/bridge.jpg', alt='Bridge')
+						.caption
+							h3 Thumbnail label
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				.col-sm-6.col-md-4
+					.thumbnail
+						a.lightbox(href='../images/tunnel.jpg')
+							img(src='../images/tunnel.jpg', alt='Tuneel')
+						.caption
+							h3 Thumbnail label
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				.col-sm-6.col-md-4
+					.thumbnail
+						a.lightbox(href='../images/coast.jpg')
+							img(src='../images/coast.jpg', alt='Coast')
+						.caption
+							h3 Thumbnail label
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				.col-sm-6.col-md-4
+					.thumbnail
+						a.lightbox(href='../images/rails.jpg')
+							img(src='../images/rails.jpg', alt='Rails')
+						.caption
+							h3 Thumbnail label
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				.col-sm-6.col-md-4
+					.thumbnail
+						a.lightbox(href='../images/traffic.jpg')
+							img(src='../images/traffic.jpg', alt='Traffic')
+						.caption
+							h3 Thumbnail label
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js')
+	script.
+		baguetteBox.run('.tz-gallery');
+block content

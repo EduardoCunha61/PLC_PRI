@@ -1,0 +1,73 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title I am...
+    // Bootstrap core CSS
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+      
+    style.
+      * {
+      box-sizing: border-box;
+      }
+      body {
+      margin: 0;
+      font-family: Helvetica;
+      font-size: 17px;
+      }
+      #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      }
+      .content {
+      position: fixed ;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 50px;
+      }
+      #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+      }
+      #myBtn:hover {
+      background: #ddd;
+      color: black;
+      }
+    body
+        // Navigation
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-secondary.fixed-top
+            .container
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                if(!user)
+                    ul.navbar-nav.m-auto
+                        li.nav-item
+                            a.nav-link(href='/') Home &nbsp &nbsp &nbsp
+                        li.nav-item.active
+                            a.nav-link(href='/login') Login &nbsp &nbsp &nbsp
+                        li.nav-item.active
+                            a.nav-link(href='/registo') Registo &nbsp &nbsp &nbsp
+
+                if(user)
+                    ul.navbar-nav.m-auto
+                        li.nav-item
+                            a.nav-link(href='/perfil') Home &nbsp &nbsp &nbsp
+                        li.nav-item.active
+                            a.nav-link(href='/logout') Logout &nbsp &nbsp &nbsp
+block content

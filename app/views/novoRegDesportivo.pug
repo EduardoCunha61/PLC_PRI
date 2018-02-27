@@ -1,0 +1,76 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Nova ideia
+    // Bootstrap core CSS
+    link(rel='stylesheet', href='../stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='../stylesheets/style.css')
+      
+    style.
+      * {
+      box-sizing: border-box;
+      }
+      body {
+      margin: 0;
+      font-family: Helvetica;
+      font-size: 17px;
+      }
+
+    body
+
+    .container
+    #loginbox.mainbox.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2(style='margin-top:50px;')
+        .panel.panel-info
+            .panel-heading
+                h3 
+                    font(color='#426874') 
+                        font(face='helvetica') Insira novo registo desportivo
+            .panel-body(style='padding-top:15px')
+                #login-alert.alert.alert-danger.col-sm-12(style='display:none')
+                form#loginform.form-horizontal(role='form')
+                    .input-group(style='margin-bottom: 15px')
+                        span.input-group-addon
+                            i.glyphicon.glyphicon-user
+                        label.col-md-3.control-label(for='titulo')
+                            font(color='#426874')
+                                b Título
+                                textarea(rows='1', cols='55',name='titulo')
+                    .input-group(style='margin-bottom: 15px')
+                        span.input-group-addon
+                            i.glyphicon.glyphicon-user
+                        label.col-md-3.control-label(for='data')
+                            font(color='#426874')
+                                b Data
+                                textarea(rows='1', cols='55',name='data')
+                    .input-group(style='margin-bottom: 15px')
+                        span.input-group-addon
+                            i.glyphicon.glyphicon-user
+                        label.col-md-3.control-label(for='desporto')
+                            font(color='#426874')
+                                b Desporto/Atividade
+                                textarea(rows='1', cols='55',name='desporto')
+                    .input-group(style='margin-bottom: 15px')
+                        span.input-group-addon
+                            i.glyphicon.glyphicon-user
+                        label.col-md-3.control-label(for='duracao')
+                            font(color='#426874')
+                                b Duração
+                                textarea(rows='1', cols='55',name='duracao')
+                    .input-group(style='margin-bottom: 15px')
+                        span.input-group-addon
+                            i.glyphicon.glyphicon-user
+                        label.col-md-3.control-label(for='descricao')
+                            font(color='#426874')
+                                b Descrição    
+                                textarea(rows='7', cols='55',name='descricao')                 
+                    .form-group(style='margin-top:15px')
+                    // Button
+                    .col-sm-12.controls
+                        a#btn-login.btn.btn-secondary(href='#') Registar  
+
+block content

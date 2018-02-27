@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    .container
+    #signupbox.mainbox.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2(style=' margin-top:80px')
+        .panel.panel-info
+            .panel-heading
+                h3 
+                    font(color='#426874') 
+                        font(face='helvetica') Registar
+            .panel-body(style='padding-top:30px')
+                form#signupform.form-horizontal(role='form', action='/registo', method='post')
+                    #signupalert.alert.alert-danger(style='display:none')
+                        p Error:
+                        span
+                    .form-group
+                        .col-md-9
+                            input.form-control(type='text', name='name', placeholder='Nome')
+                            .input-group(style='margin-bottom: 25px')
+                    .form-group
+                        .col-md-9
+                            input.form-control(type='text', name='username', placeholder='Nome de Utilizador')
+                            .input-group(style='margin-bottom: 25px')
+                    .form-group
+                        .col-md-9
+                            input.form-control(type='password', name='password', placeholder='Password')
+                            .input-group(style='margin-bottom: 25px')
+                    .form-group
+                        // Button
+                        .col-md-offset-3.col-md-9
+                            button#btn-signup.btn.btn-secondary(type='submit')
+                                i.icon-hand-right
+                                | Registar
+                    .form-group
+                        .col-md-12.control
+                            div(style='border-top: 1px solid#888; padding-top:15px; font-size:85%')
+                                b Já tem uma conta? 
+                                a(href='/login', onclick="$('#loginbox').hide(); $('#signupbox').show()")
+                                    b Autentique-se aqui

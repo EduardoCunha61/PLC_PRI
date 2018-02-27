@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    .container
+    #loginbox.mainbox.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2(style='margin-top:57px;')
+        .panel.panel-info
+            .panel-heading
+                h3 
+                    font(color='#426874') 
+                        font(face='helvetica') Insira nova receita culinária
+            .panel-body(style='padding-top:30px')
+                form#loginform.form-horizontal(role='form' action= "/"+user._id+'/ReceitasCulinarias/novaReceita' method='post')
+                    .input-group(style='margin-bottom: 15px')
+                        span.input-group-addon
+                            i.glyphicon.glyphicon-user
+                        font(face='helvetica') Titulo
+                            textarea(rows='1', cols='55',name='titulo')
+                    .input-group(style='margin-bottom: 15px',name='descricao')
+                        span.input-group-addon
+                            i.glyphicon.glyphicon-lock
+                        font(face='helvetica') Descrição    
+                            textarea(rows='7', cols='55',name='descricao')                 
+                    .form-group(style='margin-top:15px')
+                        .col-md-offset-3.col-md-9
+                            button#btn-signup.btn.btn-secondary(type='submit')
+                                i.icon-hand-right
+                                | Adiciona a Receita

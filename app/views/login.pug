@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    .container
+    #loginbox.mainbox.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2(style='margin-top:80px;')
+        .panel.panel-info
+            .panel-heading
+                h3 
+                    font(color='#426874') 
+                        font(face='helvetica') Autenticar
+            .panel-body(style='padding-top:30px')
+                #login-alert.alert.alert-danger.col-sm-12(style='display:none')
+                form#loginform.form-horizontal(role='form', action='/login', method='post')
+                    .input-group(style='margin-bottom: 25px')
+                        span.input-group-addon
+                            i.glyphicon.glyphicon-user
+                        input#login-username.form-control(type='text', name='username', value='', placeholder='Username')
+                    .input-group(style='margin-bottom: 25px')
+                        span.input-group-addon
+                            i.glyphicon.glyphicon-lock
+                        input#login-password.form-control(type='password', name='password', placeholder='Password')
+                    .form-group(style='margin-top:10px')
+                        // Button
+                        .col-sm-12.controls
+                            button#btn-login.btn.btn-secondary(type='submit') Login  
+                    .form-group
+                        .col-md-12.control
+                            div(style='border-top: 1px solid#888; padding-top:15px; font-size:85%')
+                                b Ainda não tem conta? 
+                                a(href='/registo', onclick="$('#loginbox').hide(); $('#signupbox').show()")
+                                    b Registe-se aqui

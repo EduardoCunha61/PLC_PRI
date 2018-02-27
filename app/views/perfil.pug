@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  
+    nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-secondary.fixed-top(style=' margin-top:57px')
+      a.navbar-brand.js-scroll-trigger(href='#page-top')
+        span.d-none.d-lg-blockblock
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href=user._id +'/atividades') Atividades
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href=user._id +'/AlbumFotografico') Álbuns Fotográficos    
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href=user._id +'/RegistoFormacao') Registo de Formação
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href=user._id +'/LocalVisitado') Locais Visitados
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href=user._id +'/RegistoDesportivo') Registo Desportivo
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href=user._id +'/Evento') Participação num evento
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href=user._id +'/ReceitasCulinarias') Receitas Culinárias
+          li.nav-item           
+            a.nav-link.js-scroll-trigger(href=user._id +'/Ideias') Ideias
+
+    br
+    h2(style=' margin-top:57px')
+      center
+          font(face='helvetica') Diário Digital
+          
+
+          
